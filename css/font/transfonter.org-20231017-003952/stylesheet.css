@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fussion';
+    src: url('Fussion.eot');
+    src: url('Fussion.eot?#iefix') format('embedded-opentype'),
+        url('Fussion.woff2') format('woff2'),
+        url('Fussion.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

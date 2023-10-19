@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박성하 포트폴리오</title>
+    <link rel="stylesheet" href="lib/dist/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script src="lib/dist/fullpage.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['home', 'about', 'publishing', 'design', 'contact'],
+                navigation: true,
+                showActiveTooltip: true,
+            });
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+            });
+            var swiper = new Swiper(".design_list", {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+            });
+        })//jquery end
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#publishing">PUBLISHING</a></li>
+                <li><a href="#design">DESIGN</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="inner">
+                <h1 class="logo"><img src="img/LOGO.png" alt=""></h1>
+                <h2><img src="img/TITLE.png" alt=""></h2>
+                <h3>열정 넘치는 신입 웹 퍼블리셔로, 혁신적인 디자인과 사용자 경험을 통해 웹을 빛나게 만드는 것을 사랑합니다.</h3>
+            </div><!-- .inner end -->
+            <section class="svg">
+                <p class="ball"></p>
+                <p class="ball2"></p>
+                <!-- svg path -->
+                <svg width="1773" height="960" viewBox="0 0 1773 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1756.77 249.957C1801.94 399.625 1745.55 564.57 1617.7 710.284C1489.85 855.992 1290.6 982.406 1050.24 1054.96C809.877 1127.51 573.959 1132.44 386.848 1081.8C199.728 1031.16 61.4954 924.957 16.3198 775.289C-28.8557 625.621 27.5351 460.676 155.386 314.961C283.232 169.253 482.483 42.8397 722.846 -29.7107C963.208 -102.261 1199.13 -107.198 1386.24 -56.5558C1573.36 -5.91134 1711.59 100.289 1756.77 249.957Z"
+                        stroke="white" />
+                </svg>
+            </section><!-- .svg end -->
+        </div>
+        <div class="section" id="section1">
+            <div class="inner">
+                <h2>ABOUT</h2>
+                <div class="box">
+                    <div class="mid">
+                        <img class="me" src="img/포폴자료/내이미지.jpg" alt="">
+                        <div class="info"><img src="img/myinfo.png" alt=""></div>
+                        <div class="skill">
+                            <img src="img/skill.png" alt="">
+                        </div>
+                    </div><!-- .mid end -->
+                    <div class="bot">
+                        <img src="img/aboutme.png" alt="">
+                        <p>안녕하세요 저는 신입 웹 퍼블리셔 박성하입니다. <br>
+                            저는 웹 퍼블리셔로서 다양한 웹 프로젝트를 위해 최적화된 사용자 경험을 제공합니다.<br>
+                            HTML, CSS, JavaScript를 능숙하게 다루며, 웹 표준과 접근성을 고려하여 웹 페이지를 디자인하고 구현합니다.<br>
+                            새로운 기술과 트렌드를 끊임없이 학습하며, 사용자들에게 최고의 웹 경험을 제공하기 위해 노력합니다. <br>
+                            함께하는 프로젝트에서 뛰어난 웹 퍼블리싱 능력을 발휘하여 결과물을 높은 수준으로 이끌어 나갈 것입니다.</p>
+                    </div><!-- .bot end -->
+                </div><!-- .box end -->
+            </div><!-- .inner end -->
+        </div>
+        <div class="section" id="section2">
+            <div class="inner">
+                <h2>PUBLISHING</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cap site_img">
+                                <span class="side1"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg1">
+                                <div class="text">
+                                    <h3>01. 브라보펫</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Responsive Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor inner1">
+                                <img src="img/목업/1.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img2">
+                                <span class="side2"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg2">
+                                <div class="text">
+                                    <h3>02. 우리투어</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/2.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img3">
+                                <span class="side3"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg3">
+                                <div class="text">
+                                    <h3>03. 지오다노</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/3.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img4">
+                                <span class="side4"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg4">
+                                <div class="text">
+                                    <h3>04. 이디야</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/4.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img5">
+                                <span class="side5"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg5">
+                                <div class="text">
+                                    <h3>05. 마녀공장</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/5.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img6">
+                                <span class="side6"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg6">
+                                <div class="text">
+                                    <h3>06. 스미스티</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/6.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cap site_img7">
+                                <span class="side7"></span>
+                            </div><!-- .left end -->
+                           <div class="text_box bg7">
+                                <div class="text">
+                                    <h3>07. 위드굿즈</h3>
+                                    <div class="text_info">
+                                        <div class="text_title">
+                                            <p>Type</p>
+                                            <p>Tool</p>
+                                            <p>Page</p>
+                                            <p>참여도</p>
+                                        </div><!-- .text_title end -->
+                                        <div class="text_title2">
+                                            <p>Web Site</p>
+                                            <p>Photoshop, Html, Css, Js, Jquery</p>
+                                            <p>Main</p>
+                                            <p>100% 디자인, 코딩</p>
+                                        </div><!-- .text_title2 end -->
+                                    </div><!-- text_info end -->
+                                    <span class="process">
+                                        <a href="#">Process</a>
+                                    </span>
+                                    <span class="site">
+                                        <a href="#">Site</a>
+                                    </span>
+                                </div><!-- .text end -->
+                            </div><!-- .text_box end -->
+                            <div class="monitor">
+                                <img src="img/목업/7.png" alt="">
+                            </div><!-- .monitor end -->
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p>마우스를 좌우로 드래그하여 여러가지 프로젝트를 확인해보세요!</p>
+            </div><!-- .inner end -->
+        </div>
+        <div class="section" id="section3">
+            <div class="inner">
+                <h2>DESIGN</h2>
+                <div class="swiper design_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide design_bg">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업1.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업1.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg2">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업2.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업2.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>여름방학 이벤트 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg3">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업3.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업3.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>IKEA 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg4">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업4.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업4.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>의류 브랜드 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg5">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업5.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업5.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg6">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업6.jpg" data-fancybox="images">
+                                        <img src="img/디자인-목업6.jpg" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg7">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업7.png" data-fancybox="images">
+                                        <img src="img/디자인-목업7.png" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                        <div class="swiper-slide design_bg8">
+                            <div class="inner2">
+                                <figure>
+                                    <a href="img/디자인-목업8.png" data-fancybox="images">
+                                        <img src="img/디자인-목업8.png" />
+                                      </a>
+                                </figure>
+                                <div>
+                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                </div>
+                            </div><!-- .inner end -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!-- .inner end -->
+        </div><!-- #section3 -->
+
+        <footer class="section" id="section4">
+            <div class="inner">
+                <h2>CONTACT</h2>
+                <div>
+                    <img src="img/contact.png" alt="">
+                </div>
+            </div><!-- .inner end -->
+            <div class="text_slide">
+                <p>THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK
+                    YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU
+                    FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO &nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR WATCHING MY PORTFOLIO&nbsp;&nbsp;THANK YOU FOR
+                    WATCHING MY PORTFOLIO</p>
+            </div><!-- .text_slide end -->
+            <p class="copy">Copyright © 2023 PARK SEONG HA. ALL Rights Reserved.</p>
+        </footer><!-- #footer end -->
+
+    </div>
+</body>
+
+</html>
