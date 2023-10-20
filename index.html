@@ -7,7 +7,9 @@
     <title>박성하 포트폴리오</title>
     <link rel="stylesheet" href="lib/dist/fullpage.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
     <script src="lib/jquery-3.7.0.min.js"></script>
     <script src="lib/dist/fullpage.min.js"></script>
@@ -21,6 +23,41 @@
                 anchors: ['home', 'about', 'publishing', 'design', 'contact'],
                 navigation: true,
                 showActiveTooltip: true,
+                afterLoad: function (origin, destination, direction) {
+                    if (destination.index == 1) {
+                        document.querySelector('#section1').querySelector('h2').style.left = 240 + 'px';
+                    
+                    }
+                    else if (origin && origin.index == 1) {
+                        document.querySelector('#section1').querySelector('h2').style.left = -500 + 'px';
+                        
+                    }
+                    if (destination.index == 2) {
+                        document.querySelector('#section2').querySelector('h2').style.left = 240 + 'px';
+                    
+                    }
+                    else if (origin && origin.index == 2) {
+                        document.querySelector('#section2').querySelector('h2').style.left = -500 + 'px';
+                        
+                    }
+                    if (destination.index == 3) {
+                        document.querySelector('#section3').querySelector('h2').style.left = 240 + 'px';
+                    
+                    }
+                    else if (origin && origin.index == 3) {
+                        document.querySelector('#section3').querySelector('h2').style.left = -500 + 'px';
+                        
+                    }
+                    if (destination.index == 4) {
+                        document.querySelector('#section4').querySelector('h2').style.left = 240 + 'px';
+                    
+                    }
+                    else if (origin && origin.index == 4) {
+                        document.querySelector('#section4').querySelector('h2').style.left = -500 + 'px';
+                        
+                    }
+
+                }
             });
             var swiper = new Swiper(".mySwiper", {
                 navigation: {
@@ -66,6 +103,12 @@
                 <h1 class="logo"><img src="img/LOGO.png" alt=""></h1>
                 <h2><img src="img/TITLE.png" alt=""></h2>
                 <h3>열정 넘치는 신입 웹 퍼블리셔로, 혁신적인 디자인과 사용자 경험을 통해 웹을 빛나게 만드는 것을 사랑합니다.</h3>
+                <span class="star">
+                    <img src="img/star.png" alt="">
+                </span><!-- .star end -->
+                <span class="planet">
+                    <img src="img/행성.png" alt="">
+                </span><!-- .plant end -->
             </div><!-- .inner end -->
             <section class="svg">
                 <p class="ball"></p>
@@ -109,7 +152,7 @@
                             <div class="cap site_img">
                                 <span class="side1"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg1">
+                            <div class="text_box bg1">
                                 <div class="text">
                                     <h3>01. 브라보펫</h3>
                                     <div class="text_info">
@@ -127,10 +170,10 @@
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
                                     <span class="process">
-                                        <a href="#">Process</a>
+                                        <a target="_blank" href="img/포폴 프로세스/브라보펫프로세스.pdf">Process</a>
                                     </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/bravopet">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -142,7 +185,7 @@
                             <div class="cap site_img2">
                                 <span class="side2"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg2">
+                            <div class="text_box bg2">
                                 <div class="text">
                                     <h3>02. 우리투어</h3>
                                     <div class="text_info">
@@ -159,11 +202,8 @@
                                             <p>100% 디자인, 코딩</p>
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
-                                    <span class="process">
-                                        <a href="#">Process</a>
-                                    </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/woritour/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -175,7 +215,7 @@
                             <div class="cap site_img3">
                                 <span class="side3"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg3">
+                            <div class="text_box bg3">
                                 <div class="text">
                                     <h3>03. 지오다노</h3>
                                     <div class="text_info">
@@ -193,10 +233,10 @@
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
                                     <span class="process">
-                                        <a href="#">Process</a>
+                                        <a target="_blank" href="img/포폴 프로세스/지오다노프로세스.pdf">Process</a>
                                     </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/giordano/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -208,7 +248,7 @@
                             <div class="cap site_img4">
                                 <span class="side4"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg4">
+                            <div class="text_box bg4">
                                 <div class="text">
                                     <h3>04. 이디야</h3>
                                     <div class="text_info">
@@ -226,10 +266,10 @@
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
                                     <span class="process">
-                                        <a href="#">Process</a>
+                                        <a target="_blank" href="img/포폴 프로세스/이디야프로세스.pdf">Process</a>
                                     </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/idiya/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -241,7 +281,7 @@
                             <div class="cap site_img5">
                                 <span class="side5"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg5">
+                            <div class="text_box bg5">
                                 <div class="text">
                                     <h3>05. 마녀공장</h3>
                                     <div class="text_info">
@@ -258,11 +298,8 @@
                                             <p>100% 디자인, 코딩</p>
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
-                                    <span class="process">
-                                        <a href="#">Process</a>
-                                    </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/manyo/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -274,7 +311,7 @@
                             <div class="cap site_img6">
                                 <span class="side6"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg6">
+                            <div class="text_box bg6">
                                 <div class="text">
                                     <h3>06. 스미스티</h3>
                                     <div class="text_info">
@@ -291,11 +328,8 @@
                                             <p>100% 디자인, 코딩</p>
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
-                                    <span class="process">
-                                        <a href="#">Process</a>
-                                    </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/smithtea/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -307,7 +341,7 @@
                             <div class="cap site_img7">
                                 <span class="side7"></span>
                             </div><!-- .left end -->
-                           <div class="text_box bg7">
+                            <div class="text_box bg7">
                                 <div class="text">
                                     <h3>07. 위드굿즈</h3>
                                     <div class="text_info">
@@ -324,11 +358,8 @@
                                             <p>100% 디자인, 코딩</p>
                                         </div><!-- .text_title2 end -->
                                     </div><!-- text_info end -->
-                                    <span class="process">
-                                        <a href="#">Process</a>
-                                    </span>
                                     <span class="site">
-                                        <a href="#">Site</a>
+                                        <a target="_blank" href="https://seonghayo.github.io/withgoods/">Site</a>
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
@@ -354,7 +385,7 @@
                                 <figure>
                                     <a href="img/디자인-목업1.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업1.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
                                     <p>PHOTOSHOP, ILLUSTRATOR</p>
@@ -367,7 +398,7 @@
                                 <figure>
                                     <a href="img/디자인-목업2.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업2.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
                                     <p>PHOTOSHOP, ILLUSTRATOR</p>
@@ -380,7 +411,7 @@
                                 <figure>
                                     <a href="img/디자인-목업3.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업3.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
                                     <p>PHOTOSHOP, ILLUSTRATOR</p>
@@ -393,10 +424,10 @@
                                 <figure>
                                     <a href="img/디자인-목업4.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업4.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
-                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <p>PHOTOSHOP</p>
                                     <h4>의류 브랜드 배너 디자인</h4>
                                 </div>
                             </div><!-- .inner end -->
@@ -406,11 +437,11 @@
                                 <figure>
                                     <a href="img/디자인-목업5.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업5.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
-                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
-                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                    <p>PHOTOSHOP</p>
+                                    <h4>관광지 홍보 디자인</h4>
                                 </div>
                             </div><!-- .inner end -->
                         </div>
@@ -419,11 +450,11 @@
                                 <figure>
                                     <a href="img/디자인-목업6.jpg" data-fancybox="images">
                                         <img src="img/디자인-목업6.jpg" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
-                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
-                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                    <p>PHOTOSHOP</p>
+                                    <h4>여행사 이벤트 배너 디자인</h4>
                                 </div>
                             </div><!-- .inner end -->
                         </div>
@@ -432,10 +463,10 @@
                                 <figure>
                                     <a href="img/디자인-목업7.png" data-fancybox="images">
                                         <img src="img/디자인-목업7.png" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
-                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
+                                    <p>PHOTOSHOP</p>
                                     <h4>봄맞이 할일 배너 디자인</h4>
                                 </div>
                             </div><!-- .inner end -->
@@ -445,11 +476,11 @@
                                 <figure>
                                     <a href="img/디자인-목업8.png" data-fancybox="images">
                                         <img src="img/디자인-목업8.png" />
-                                      </a>
+                                    </a>
                                 </figure>
                                 <div>
-                                    <p>PHOTOSHOP, ILLUSTRATOR</p>
-                                    <h4>봄맞이 할일 배너 디자인</h4>
+                                    <p>PHOTOSHOP</p>
+                                    <h4>가전제품 광고 배너 디자인</h4>
                                 </div>
                             </div><!-- .inner end -->
                         </div>
