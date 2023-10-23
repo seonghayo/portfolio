@@ -144,12 +144,43 @@ body {
     font-family: 'Noto Sans KR';
     background-color: black;
 }
-
+html,body{
+    cursor: url(../img/cursor.png), auto;
+}
+html:hover ,body:hover {
+    cursor: url(../img/cursor.png), auto;
+}
+a {
+    cursor: url(../img/cursor.png), auto;
+}
+a:hover {
+    cursor: url(../img/cursor.png), auto;
+}
+span:hover {
+    cursor: url(../img/cursor.png), auto;
+}
+header {
+    cursor: url(../img/cursor2.png), auto;
+}
+header nav:hover {
+    cursor: url(../img/cursor2.png), auto;
+}
+header nav ul:hover {
+    cursor: url(../img/cursor2.png), auto;
+}
+header nav ul li:hover {
+    cursor: url(../img/cursor2.png), auto;
+}
+header a:hover {
+    cursor: url(../img/cursor2.png), auto;
+}
 .section .inner {
     width: 1440px;
     margin: 0 auto;
 }
-
+.fp-warning, .fp-watermark {
+    display: none;
+}
 /* 풀페이지 네비 */
 
 #fp-nav ul,
@@ -170,7 +201,6 @@ header {
     right: 0;
     z-index: 999;
 }
-
 header nav {
     margin: 0 auto;
     position: fixed;
@@ -182,7 +212,7 @@ header nav ul {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 header nav ul li {
@@ -200,6 +230,7 @@ header nav ul li {
 #section0 h3 {
     margin-top: 50px;
     color: white;
+    font-size: 20px;
 }
 
 #section0 .inner .star {
@@ -214,20 +245,20 @@ header nav ul li {
 #section0 .inner .planet {
     position: absolute;
     right: 400px;
-    top: 320px;
-    width: 150px;
+    top: 310px;
+    width: 200px;
     animation: planet 1s infinite ease-in-out;
 }
 
 @keyframes planet {
     0% {
-        top: 320px;
+        top: 310px;
     }
     50% {  
-        top: 325px;
+        top: 315px;
     }
     100% {
-        top: 320px;
+        top: 310px;
     }
 }
 
@@ -449,6 +480,7 @@ header nav ul li {
     background-color: white;
     color: black;
     font-weight: bold;
+    cursor: url(../img/cursor.png), auto;
 }
 
 .mySwiper .swiper-button-prev::before {
@@ -532,7 +564,7 @@ header nav ul li {
     position: relative;
 }
 #section2 .swiper-slide:hover .side1 {
-    animation: bravoscroll 15s infinite;
+    animation: bravoscroll 20s infinite;
 }
 @keyframes bravoscroll {
     0% {
@@ -560,7 +592,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side3 {
-    animation: gioscroll 15s infinite;
+    animation: gioscroll 22s infinite;
 }
 @keyframes gioscroll {
     0% {
@@ -588,7 +620,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side5 {
-    animation: manyoscroll 15s infinite;
+    animation: manyoscroll 10s infinite;
 }
 @keyframes manyoscroll {
     0% {
@@ -602,7 +634,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side6 {
-    animation: smithscroll 15s infinite;
+    animation: smithscroll 20s infinite;
 }
 @keyframes smithscroll {
     0% {
@@ -707,12 +739,14 @@ header nav ul li {
     border: 3px solid  #000;
     background-color: white;
     color: black;
+    cursor: url(../img/cursor.png), auto;
 }
 #section2 .monitor {
     width: 300px;
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 0px;
+    transition: 0.5s;
     
 }
 #section2 .monitor img {
@@ -780,6 +814,9 @@ header nav ul li {
     width: 50px;
     height: 29px;
 }
+.swiper-pagination-bullet:hover {
+    cursor: url(../img/cursor.png), auto;
+}
 /* #section3 */
 
 #section3 {
@@ -833,6 +870,15 @@ header nav ul li {
 .design_list .design_bg7{background: url(../img/design_bg7.png) top center no-repeat;}
 .design_list .design_bg8{background: url(../img/design_bg8.png) top center no-repeat;}
 
+#section3 .inner > p {
+    color: white;
+    font-weight: normal;
+    font-family: 'SB Aggro';
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+
+}
 
 /* section4 */
 #section4 {
