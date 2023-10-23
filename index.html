@@ -17,72 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function () {
-            var myFullpage = new fullpage('#fullpage', {
-                anchors: ['home', 'about', 'publishing', 'design', 'contact'],
-                navigation: true,
-                showActiveTooltip: true,
-                afterLoad: function (origin, destination, direction) {
-                    if (destination.index == 1) {
-                        document.querySelector('#section1').querySelector('h2').style.left = 240 + 'px';
-                    
-                    }
-                    else if (origin && origin.index == 1) {
-                        document.querySelector('#section1').querySelector('h2').style.left = -500 + 'px';
-                        
-                    }
-                    if (destination.index == 2) {
-                        document.querySelector('#section2').querySelector('h2').style.left = 240 + 'px';
-                    
-                    }
-                    else if (origin && origin.index == 2) {
-                        document.querySelector('#section2').querySelector('h2').style.left = -500 + 'px';
-                        
-                    }
-                    if (destination.index == 3) {
-                        document.querySelector('#section3').querySelector('h2').style.left = 240 + 'px';
-                    
-                    }
-                    else if (origin && origin.index == 3) {
-                        document.querySelector('#section3').querySelector('h2').style.left = -500 + 'px';
-                        
-                    }
-                    if (destination.index == 4) {
-                        document.querySelector('#section4').querySelector('h2').style.left = 240 + 'px';
-                    
-                    }
-                    else if (origin && origin.index == 4) {
-                        document.querySelector('#section4').querySelector('h2').style.left = -500 + 'px';
-                        
-                    }
-
-                }
-            });
-            var swiper = new Swiper(".mySwiper", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "fraction",
-                },
-            });
-            var swiper = new Swiper(".design_list", {
-                slidesPerView: 4,
-                spaceBetween: 5,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-            });
-        })//jquery end
-    </script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -177,7 +112,7 @@
                                     </span>
                                 </div><!-- .text end -->
                             </div><!-- .text_box end -->
-                            <div class="monitor inner1">
+                            <div class="monitor">
                                 <img src="img/목업/1.png" alt="">
                             </div><!-- .monitor end -->
                         </div>
@@ -322,7 +257,7 @@
                                             <p>참여도</p>
                                         </div><!-- .text_title end -->
                                         <div class="text_title2">
-                                            <p>Web Site</p>
+                                            <p>Responsive Web Site</p>
                                             <p>Photoshop, Html, Css, Js, Jquery</p>
                                             <p>Main</p>
                                             <p>100% 디자인, 코딩</p>
@@ -487,6 +422,7 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <p>보고 싶은 디자인 목록을 클릭하시면 더 큰 크기로 작품을 확인해 볼 수 있습니다.</p>
             </div><!-- .inner end -->
         </div><!-- #section3 -->
 
