@@ -17,7 +17,7 @@ $(function () {
             
             }
             else if (origin && origin.index == 2) {
-                document.querySelector('#section2').querySelector('h2').style.left = -500 + 'px';
+                document.querySelector('#section2').querySelector('h2').style.left = -700 + 'px';
                 
             }
             if (destination.index == 3) {
@@ -37,14 +37,6 @@ $(function () {
                 
             }
             //section2 모니터
-            if (destination.index == 2) {
-                document.querySelector('#section2').querySelector('.monitor').style.bottom = -10 + 'px';
-            
-            }
-            else if (origin && origin.index == 2) {
-                document.querySelector('#section2').querySelector('.monitor').style.bottom = -1000 + 'px';
-                
-            }
         }
     });
     var swiper = new Swiper(".mySwiper", {
