@@ -145,22 +145,19 @@ body {
     background-color: black;
 }
 html,body{
-    cursor: url(../img/cursor.png), auto;
-}
-html:hover ,body:hover {
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor.png) 30 30, auto;
 }
 a {
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor.png) 30 30, auto;
 }
 a:hover {
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor.png) 30 30, auto;
 }
 span:hover {
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor.png) 30 30, auto;
 }
 header {
-    cursor: url(../img/cursor2.png), auto;
+    cursor: url(../img/cursor2.png) , auto;
 }
 header nav:hover {
     cursor: url(../img/cursor2.png), auto;
@@ -513,7 +510,7 @@ header nav ul li {
     color: white;
     position: absolute;
     top: 75px;
-    left: -500px;
+    left: -700px;
     font-size: 50px;
     font-family: 'Fussion';
     z-index: 99999;
@@ -563,8 +560,14 @@ header nav ul li {
     background: url(../img/publishing목업7.png) no-repeat;
     position: relative;
 }
+#section2 .swiper-slide .site_img8 {
+    width: 920px;
+    height: 758px;
+    background: url(../img/publishing목업8.png) no-repeat;
+    position: relative;
+}
 #section2 .swiper-slide:hover .side1 {
-    animation: bravoscroll 20s infinite;
+    animation: bravoscroll 22s infinite;
 }
 @keyframes bravoscroll {
     0% {
@@ -578,7 +581,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side2 {
-    animation: woricroll 15s infinite;
+    animation: woricroll 18s infinite;
 }
 @keyframes woricroll {
     0% {
@@ -592,7 +595,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side3 {
-    animation: gioscroll 22s infinite;
+    animation: gioscroll 23s infinite;
 }
 @keyframes gioscroll {
     0% {
@@ -606,7 +609,7 @@ header nav ul li {
     }
 }
 #section2 .swiper-slide:hover .side4 {
-    animation: ediyascroll 15s infinite;
+    animation: ediyascroll 20s infinite;
 }
 @keyframes ediyascroll {
     0% {
@@ -661,6 +664,20 @@ header nav ul li {
         background-position-y: 0;
     }
 }
+#section2 .swiper-slide:hover .side8 {
+    animation: busanscroll 15s infinite;
+}
+@keyframes busanscroll {
+    0% {
+        background-position-y: 0;
+    }
+    50% {  
+        background-position-y: -1280px;
+    }
+    100% {
+        background-position-y: 0;
+    }
+}
 #section2 .swiper-slide .cap span {
     width: 910px;
     height: 702px;
@@ -677,6 +694,7 @@ header nav ul li {
 #section2 .side5 {background: url(../img/scroll/메인_전체.jpg) no-repeat;}
 #section2 .side6 {background: url(../img/scroll/스미스티.jpg) no-repeat;}
 #section2 .side7 {background: url(../img/scroll/위드굿즈.png) no-repeat;}
+#section2 .side8 {background: url(../img/scroll/부산명소.png) no-repeat;}
 
 #section2 .swiper-slide .bg1 {background: url(../img/text_bg.png);}
 #section2 .swiper-slide .bg2 {background: url(../img/text_bg2.png);}
@@ -685,6 +703,7 @@ header nav ul li {
 #section2 .swiper-slide .bg5 {background: url(../img/text_bg5.png);}
 #section2 .swiper-slide .bg6 {background: url(../img/text_bg6.png);}
 #section2 .swiper-slide .bg7 {background: url(../img/text_bg7.png);}
+#section2 .swiper-slide .bg8 {background: url(../img/text_bg8.png);}
 
 
 #section2 .text_box {
@@ -723,7 +742,6 @@ header nav ul li {
     line-height: 20px;
 }
 #section2 .text_box .text span {
-    padding: 10px 15px;
     border-radius: 50px;
     font-size: 18px;
     margin-right: 20px;
@@ -731,9 +749,13 @@ header nav ul li {
     background-color: black;
     color: white;   
     border: 3px solid  #000;
-    transition: 0.5s;
+    transition: 0.4s;
     font-family: 'SB Aggro';
     font-weight: bold;
+    padding: 10px 10px;
+}
+#section2 .text_box .text span a {
+    padding: 10px 18px;
 }
 #section2 .text_box .text span:hover {
     border: 3px solid  #000;
@@ -869,6 +891,10 @@ header nav ul li {
 .design_list .design_bg6{background: url(../img/design_bg6.png) top center no-repeat;}
 .design_list .design_bg7{background: url(../img/design_bg7.png) top center no-repeat;}
 .design_list .design_bg8{background: url(../img/design_bg8.png) top center no-repeat;}
+.design_list .design_bg9{background: url(../img/design_bg9.png) top center no-repeat;}
+.design_list .design_bg10{background: url(../img/design_bg10.png) top center no-repeat;}
+.design_list .design_bg11{background: url(../img/design_bg11.png) top center no-repeat;}
+.design_list .design_bg12{background: url(../img/design_bg12.png) top center no-repeat;}
 
 #section3 .inner > p {
     color: white;
@@ -905,6 +931,46 @@ header nav ul li {
     bottom: 20px;
     left: 40%;
     color: white;
+}
+#section4 .inner > div {
+    position: relative;
+}
+#section4 .contact_inner {
+    display: flex;
+    color: black;
+    position: absolute;
+    top: 115px;
+    left: 320px;
+    font-size: 40px;
+    line-height: 80px;
+}
+#section4 .contact_inner .left {
+    margin-right: 100px;
+    font-family: 'Fussion';
+}
+#section4 .contact_inner .left span {
+    display: block;
+    text-align: left;
+}
+#section4 .contact_inner .right span {
+    display: block;
+    text-align: left;
+}
+#section4 .contact_inner .right {
+    font-family: 'SB Aggro';
+    font-size: 30px;
+}
+#section4 .contact_inner .right a {
+    display: block;
+    text-align: left;
+    transition: 0.5s;
+}
+#section4 .contact_inner .right a:hover {
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    padding: 0 20px;
+    cursor: url(../img/cursor2.png), auto;
 }
 /* .text_slide */
 .text_slide {
