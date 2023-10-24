@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌측메뉴 나타나기</title>
+    <link rel="stylesheet" href="css/059.css">
+
+    <!-- jquery 연결 -->
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            //jquery 작성
+            //메뉴보기 클릭했을 때 실행
+            //nav가 좌측에서 나타남(부드럽게)
+            //nav의 left값 0
+
+            $('.menu_open').click(function(){
+                $('nav').css({
+                    'left' : '0',
+                    'transition':'0.7s'
+                });
+            });    
+
+            $('.menu_close').click(function(){
+                $('nav').css({
+                    'left' : '-100%'
+                })
+            });
+
+        });//jquery end
+    </script>    
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">logo</a>
+            </h1>
+
+            <div class="menu_open">
+                <p>메뉴보기</p>
+            </div><!-- .menu_open end -->
+
+            <nav>
+                <div class="menu_close">
+                    <p>메뉴닫기</p>
+                </div><!-- .menu_close end -->
+
+                <ul class="gnb">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul><!-- .gnb end -->
+            </nav>
+        </div><!-- .inner end -->
+    </header>
+</body>
+</html>
