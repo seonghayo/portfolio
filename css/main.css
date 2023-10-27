@@ -145,16 +145,19 @@ body {
     background-color: black;
 }
 html,body{
-    cursor: url(../img/cursor.png) 30 30, auto;
+    cursor: url(../img/cursor.png) 20 20, auto;
 }
 a {
-    cursor: url(../img/cursor.png) 30 30, auto;
+    cursor: url(../img/cursor.png) 20 20, auto;
 }
 a:hover {
-    cursor: url(../img/cursor.png) 30 30, auto;
+    cursor: url(../img/cursor.png) 20 20, auto;
 }
 span:hover {
-    cursor: url(../img/cursor.png) 30 30, auto;
+    cursor: url(../img/cursor.png) 20 20, auto;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    cursor: url(../img/cursor.png) 20 20, auto;
 }
 header {
     cursor: url(../img/cursor2.png) , auto;
@@ -209,15 +212,36 @@ header nav ul {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: center;  
 }
 
 header nav ul li {
     writing-mode: vertical-rl;
-    margin: 50px 0;
+    margin: 30px 0 ;
     color: white;
 }
+/* header color */
 
+.fp-viewing-home header nav ul li:nth-child(1) {
+    color: rgb(255, 160, 160);
+}
+.fp-viewing-about header nav ul li:nth-child(2) {
+    color: rgb(255, 195, 160);
+}
+.fp-viewing-webportfolio header nav ul li:nth-child(3) {
+    color: rgb(255, 233, 160);
+}
+.fp-viewing-react header nav ul li:nth-child(4) {
+    color: rgb(214, 255, 160);
+}
+.fp-viewing-design header nav ul li:nth-child(5) {
+    color: rgb(160, 198, 255);
+}
+.fp-viewing-contact header nav ul li:nth-child(6) {
+    color: rgb(180, 160, 255);
+}
+
+/* #section0 */
 #section0 {
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -227,9 +251,12 @@ header nav ul li {
 #section0 h3 {
     margin-top: 50px;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
+#section0 .inner {
+    position: static;
+}
 #section0 .inner .star {
     position: absolute;
     right: 340px;
@@ -265,14 +292,45 @@ header nav ul li {
 .logo {
     position: absolute;
     top: 75px;
+    left: -500px;
     z-index: 9999;
     width: 200px;
+    transition: 0.75s;
 }
 
 .logo img {
     width: 100%;
 }
 
+#section0 h2 {
+    position: absolute;
+    top: 320px;
+    left: -2000px;
+    transition: 1.5s;
+    width: 1200px;
+}
+#section0 h2 img {
+    width: 100%;
+}
+#section0 h3 {
+    position: absolute;
+    top: 590px;
+    left: -3000px;
+    transition: 2s;
+    animation: h3 2.5s infinite ease-in-out;
+}
+
+@keyframes h3 {
+    0% {
+        scale: 1;
+    }
+    50% {  
+        scale: 1.02;
+    }
+    100% {
+        scale: 1;
+    }
+}
 /* 백그라운드 애니메이션 */
 
 .svg {
@@ -363,7 +421,7 @@ header nav ul li {
 
 #section1 .box .mid>img {
     width: 315px;
-    margin: 100px 0;
+    margin: 190px 0 100px;
     margin-left: 50px;
 }
 
@@ -372,27 +430,28 @@ header nav ul li {
     top: 200px;
     left: 720px;
     transition: 0.5s;
-/*     animation: info 1.2s infinite ease-in-out; */
+    transition: 0.8s;
+    scale: 0;
 }
 
 #section1 .box .mid .skill {
     position: absolute;
     top: 200px;
     left: 1210px;
-/*     animation: info 1s infinite ease-in-out; */
+    transition: 1s;
+    scale: 0;
+}
 
-}
-/* #section1 .box .mid .skill:hover {
-    animation: info 1s infinite ease-in-out;
-}
-#section1 .box .mid .info:hover {
-    animation: info 1s infinite ease-in-out;
-} */
 
 #section1 .box .bot {
     position: relative;
+    right: -2000px;
+    top: 0px;
+    transition: 1s;
 }
-
+#section1 .box .bot  {
+   
+}
 #section1 .box .bot p {
     font-weight: 500;
     line-height: 34px;
@@ -427,6 +486,10 @@ header nav ul li {
     }
 }
 
+#section1.fp-table {
+    display: flex;
+    justify-content: flex-start;
+}
 
 /* section2 swiper */
 
@@ -831,6 +894,7 @@ header nav ul li {
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px;
 }
+
 .swiper-pagination-bullet {
     background: url(../img/행성3.png) no-repeat;
     width: 50px;
@@ -996,3 +1060,15 @@ header nav ul li {
     }
 }
 
+/* section5 */
+
+#section5 h2 {
+    font-size: 50px;
+    position: absolute;
+    top: 75px;
+    left: -500px;
+    color: white;
+    font-family: 'Fussion';
+    animation: h2 1s infinite ease-in-out;
+    transition: 0.5s;
+}
