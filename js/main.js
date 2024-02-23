@@ -1,6 +1,6 @@
 $(function () {
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['home', 'about', 'webportfolio', 'react', 'design', 'contact'],
+        anchors: ['home', 'about', 'webportfolio', 'design', 'contact'],
         navigation: true,
         showActiveTooltip: true,
         afterLoad: function (origin, destination, direction) {
@@ -72,28 +72,20 @@ $(function () {
                 document.querySelector('#section2').querySelector('h2').style.left = -700 + 'px';
                 
             }
-            if (destination.index == 4) {
+            if (destination.index == 3) {
                 document.querySelector('#section3').querySelector('h2').style.left = 240 + 'px';
             
             }
-            else if (origin && origin.index == 4) {
+            else if (origin && origin.index == 3) {
                 document.querySelector('#section3').querySelector('h2').style.left = -500 + 'px';
                 
             }
-            if (destination.index == 5) {
+            if (destination.index == 4) {
                 document.querySelector('#section4').querySelector('h2').style.left = 240 + 'px';
             
             }
-            else if (origin && origin.index == 5) {
+            else if (origin && origin.index == 4) {
                 document.querySelector('#section4').querySelector('h2').style.left = -500 + 'px';
-                
-            }
-            if (destination.index == 3) {
-                document.querySelector('#section5').querySelector('h2').style.left = 240 + 'px';
-            
-            }
-            else if (origin && origin.index == 3) {
-                document.querySelector('#section5').querySelector('h2').style.left = -500 + 'px';
                 
             }
             //section2 모니터
